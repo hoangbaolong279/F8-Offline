@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <div class="info-name">
+        <label for="name">Họ tên</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Họ và tên"
+          required
+          value="Long"
+        />
+      </div>
+      <div class="info-email">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Nhập Email"
+          required
+        />
+      </div>
+      <div class="info-pass">
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" />
+      </div>
+      <div class="info-age">
+        <label for="age">Tuổi</label>
+        <input type="number" name="age" id="age" min="18" max="20" />
+      </div>
+      <div class="info-avatar">
+        <label for="avatar">Avatar</label>
+        <input type="file" name="avatar" id="avatar" />
+      </div>
+      <div class="radio-gender">
+        <label>Giới tính</label>
+        <label>
+          <input type="radio" value="0" name="gender" disabled checked />Nam
+        </label>
+        <label> <input type="radio" value="1" name="gender" />Nữ </label>
+        <label><input type="radio" value="2" name="gender" />Không biết</label>
+      </div>
+      <div class="checkbox-source">
+        <label>Nguồn</label>
+        <label>
+          <input type="checkbox" name="source" value="3" />Facebook
+        </label>
+        <label> <input type="checkbox" name="source" value="4" />Google </label>
+        <label>
+          <input type="checkbox" name="source" value="5" />Không xác định
+        </label>
+      </div>
+      <div class="provinces">
+        <label for="province">Tỉnh/Thành phố</label>
+        <select name="province" id="province">
+          <option value="6" hidden>Chọn Tỉnh - Thành Phố</option>
+          <optgroup label="Miền Bắc">
+            <option value="7" selected>Hà Nội</option>
+            <option value="8">Hà Nam</option>
+          </optgroup>
+          <optgroup label="Miền Trung">
+            <option value="9">Thanh Hóa</option>
+            <option value="10">Đà Nẵng</option>
+          </optgroup>
+          <optgroup label="Miền Nam">
+            <option value="11">Bình Dương</option>
+            <option value="12">TP Hồ Chí Minh</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="message">
+        <textarea name="message" id="">
+        Message
+        </textarea>
+      </div>
+      <div><button type="submit">Submit</button></div>
+      <div><button type="button">Button</button></div>
+      <div><button type="reset">Reset</button></div>
+    </form>
+  </body>
+</html>
+
+<!--
+    1) Trong thẻ <label> (Nhãn) luôn luôn đi cùng thẻ <input> trong đó giá trị for="" của <label> luôn luôn đi theo giá trị id="" trong <input>. Các trường nhập dữ liệu trong <input> có thuộc tính "value" thể hiện giá trị mặc định giống như "checked" và "selected"
+
+    2) Giá trị <type> (kiểu) trong <input> (type=text, password, email, number, file, radio (nút chọn) checkbox (hộp chọn [ được chọn nhiều lựa chọn ])...)
+
+    3) Đối với type="radio" và "checkbox" thì có thuộc tính "value" để gửi giá trị người dùng chọn lên sever để bên Backend thu thập dữ liệu. Trong đó có thuộc tính "checked" để tạo ra một lựa chọn mặc định và thuộc tính "disabled" để cấm chọn. 
+    
+    Thông thường khi tạo nút "radio", "checkbox" thì chúng ta thường lồng thẻ <input> trong <label>. Để nút "radio" chỉ lựa chọn được 1 nút duy nhất trong các nút chọn ta sẽ cho thuộc tính "name" giống nhau như vậy gọi là nhóm một nút "radio".
+
+    4) Bắt buộc có thuộc tính "name" để khi Backend nhận dữ liệu để biết trường đó thể hiện cái gì!
+
+    5) Thẻ <select> tạo ra một danh sách thả xuống, mỗi <option> thể hiện 1 tùy chọn trong danh sách đó. Thuộc tính "value" sẽ gửi dữ liệu khi bạn chọn lên sever. Thuộc tính "hidden" (ẩn), "selected" (chọn giá trị mặc định). Thuộc tính "multiple" để cho phép chọn nhiều tùy chọn cùng lúc, thuộc tính "size" để xác định số lượng tùy chọn hiển thị đồng thời trên danh sách thả xuống. 
+    
+    Thẻ <optgroup> có là một phần tử được sử dụng để nhóm các tùy chọn (options) bên trong một danh sách thả xuống (dropdown list) thành các nhóm con. Giá trị thuộc tính "label" để thể hiện Nhãn của nhóm
+
+    6) <textarea> sử dụng để tạo một ô văn bản đa dòng, cho phép người dùng nhập và chỉnh sửa nhiều dòng văn bản. Có thuộc tính cols và rows để xác định số cột và số hàng. 
+
+    7) <button> có "type=submit" là giá trị mặc định, type=button là một nút bấm và type="reset" reset hết các trường nhập dữ liệu
+ -->

@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.primary ul {
+    list-style: none;
+    font-size: 0;
+}
+
+.primary a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 15px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.primary > ul {
+    background-color: green;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.primary > ul > li {
+    display: inline-block;
+    
+}
+.primary > ul  li {
+    position: relative;
+}
+.primary > ul  li:hover > a {
+    background-color: rgb(202, 37, 37);
+}
+
+.primary > ul  li:hover > ul {
+    display: block;
+}
+
+.primary ul ul {
+    display: none;
+    position: absolute;
+    background-color: blueviolet;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+}
+.primary ul ul ul {
+    top: 0;
+    left: 100%;
+}
+.primary ul ul > li {
+    border: 1px dotted #fff;
+}

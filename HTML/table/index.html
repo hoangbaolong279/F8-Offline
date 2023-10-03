@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table width="100%" border="1">
+      <tr>
+        <th colspan="5">KẾT QUẢ HỌC TẬP</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Họ và tên</th>
+        <th colspan="2">Năm sinh</th>
+        <th rowspan="2">Điểm TB</th>
+        <th rowspan="2">Xếp Loại</th>
+      </tr>
+      <tr>
+        <th>Nam</th>
+        <th>Nữ</th>
+      </tr>
+      <tr>
+        <td>Lê Thanh Xuân</td>
+        <td></td>
+        <td>1988</td>
+        <td>8.5</td>
+        <td>Giỏi</td>
+      </tr>
+      <tr>
+        <td>Phan Thế Hạ</td>
+        <td>1990</td>
+        <td></td>
+        <td>6.5</td>
+        <td>Khá</td>
+      </tr>
+      <tr>
+        <td>Trần Hoài Thu</td>
+        <td></td>
+        <td>1991</td>
+        <td>9.5</td>
+        <td>Xuất Sắc</td>
+      </tr>
+      <tr>
+        <td>Trương Lưu Đông</td>
+        <td>1989</td>
+        <td></td>
+        <td>6.0</td>
+        <td>Trung Bình</td>
+      </tr>
+      <tr>
+        <td>Nguyễn Trung Thực</td>
+        <td>1988</td>
+        <td></td>
+        <td>4.5</td>
+        <td>Kém</td>
+      </tr>
+      <tr>
+        <th colspan="3">Tổng số học sinh đạt</th>
+        <th colspan="2">4 Học sinh</th>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<!-- 
+    1) Thẻ <table> có thuộc tính ban đầu phải thiết lập đó là "width" chiều rộng và "border" viền của bảng, trong đó có thuộc tính "cellspacing" khoảng cách các ô, thuộc tính "cellpadding" thể hiện nội dung của ô cho tới viền
+        
+    2) Nên viết từng hàng một để tránh trường hợp bị loạn
+
+    3) Các thẻ trong <table> là <tr> thể hiện hàng, <td> thể hiện cột, <th> thể hiện cột nhưng mà chữ căn giữa và bôi đen. Chúng ta có thể thay đổi chiều rộng của hàng cột bằng thuộc tính width
+
+    4) Thuộc tính "rowspan" là gộp hàng trong cột
+       Thuộc tính "colspan" là cột trong hàng
+
+    5) Trong <table> có các thẻ để nhóm từng phần ( header , body , footer ) của bảng thì các thẻ gồm: thead, tbody, tfoot  được dùng để nhóm và sau này mk sẽ dùng CSS cho dễ dàng
+ -->
